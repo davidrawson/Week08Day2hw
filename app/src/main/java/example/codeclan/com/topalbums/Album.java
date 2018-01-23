@@ -22,18 +22,23 @@ public class Album {
 
 
     public Integer getRanking() {
-        return ranking;
+        return this.ranking;
     }
 
     public String getArtist() {
-        return artist;
+        return this.artist;
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public Integer getYear() {
-        return year;
+        return this.year;
+    }
+
+    @Override
+    public String toString() {
+        return this.getTitle() + this.getYear();
     }
 }

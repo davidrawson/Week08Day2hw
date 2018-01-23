@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="list_view" type="id" />
+    <item name="ranking" type="id" />
+    <item name="year" type="id" />
+    <item name="artist" type="id" />
 </resources>
