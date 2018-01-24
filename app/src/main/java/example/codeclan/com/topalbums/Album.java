@@ -12,10 +12,10 @@ public class Album implements Serializable{
     private String artist;
     private String title;
     private Integer year;
-    private String coverArt;
+    private int coverArt;
 
 
-    public Album (Integer ranking, String artist, String title, Integer year, String coverArt){
+    public Album (Integer ranking, String artist, String title, Integer year, int coverArt){
 
         this.ranking = ranking;
         this.artist = artist;
@@ -41,7 +41,7 @@ public class Album implements Serializable{
         return this.year;
     }
 
-    public String getCoverArt(){
+    public int getCoverArt(){
         return this.coverArt;
     }
 

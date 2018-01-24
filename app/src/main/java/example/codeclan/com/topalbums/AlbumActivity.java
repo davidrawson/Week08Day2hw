@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
-import static example.codeclan.com.topalbums.R.id.list_view;
 
 public class AlbumActivity extends AppCompatActivity {
 
@@ -19,10 +20,15 @@ public class AlbumActivity extends AppCompatActivity {
         Album album = (Album)intent.getSerializableExtra("album");
         Log.d("AlbumActivity: ", album.getTitle());
 
-        AlbumCoverAdapter albumCoverAdapter = new AlbumCoverAdapter(this, album);
 
-//        ListView listView = findViewById(list_view);
-//        listView.setAdapter(albumCoverAdapter);
+        TextView artistView = findViewById(R.id.artist);
+        artistView.setText(album.getArtist().toString());
+
+        TextView titleView = findViewById(R.id.title);
+        titleView.setText(album.getTitle().toString());
+
+        ImageView imageView = findViewById(R.id.cover_art);
+        imageView.setImageResource(album.getCoverArt());
 
     }
 }
