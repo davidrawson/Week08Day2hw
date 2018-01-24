@@ -18,8 +18,6 @@ public class AlbumActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Album album = (Album)intent.getSerializableExtra("album");
-        Log.d("AlbumActivity: ", album.getTitle());
-
 
         TextView artistView = findViewById(R.id.artist);
         artistView.setText(album.getArtist().toString());

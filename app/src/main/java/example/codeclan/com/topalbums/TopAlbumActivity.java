@@ -20,8 +20,6 @@ public class TopAlbumActivity extends AppCompatActivity {
 
         ArrayList<Album> topAlbums = new TopAlbums().getList();
 
-//        ArrayAdapter<Movie> arrayAdapter = new ArrayAdapter<Movie>(this, R.layout.app_title, topMovies.getList());
-
         TopAlbumsAdapter albumsAdapter = new TopAlbumsAdapter(this, topAlbums);
 
         ListView listView = findViewById(list_view);

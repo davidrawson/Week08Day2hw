@@ -20,11 +20,6 @@ public class TopAlbumsAdapter extends ArrayAdapter<Album> {
         super(context, 0, albums);
     }
 
-//    public TopAlbumsAdapter(Context context, ArrayList<Album> albums){
-//        super(context, 0, albums);
-//
-//        }
-
 
     @Override
     public View getView(int position, View listItemView, ViewGroup parent){
