@@ -1,23 +1,27 @@
 package example.codeclan.com.topalbums;
 
+import java.io.Serializable;
+
 /**
  * Created by davidrawson on 23/01/2018.
  */
 
-public class Album {
+public class Album implements Serializable{
 
     private Integer ranking;
     private String artist;
     private String title;
     private Integer year;
+    private String coverArt;
 
 
-    public Album (Integer ranking, String artist, String title, Integer year){
+    public Album (Integer ranking, String artist, String title, Integer year, String coverArt){
 
         this.ranking = ranking;
         this.artist = artist;
         this.title = title;
         this.year = year;
+        this.coverArt = coverArt;
     }
 
 
@@ -35,6 +39,10 @@ public class Album {
 
     public Integer getYear() {
         return this.year;
+    }
+
+    public String getCoverArt(){
+        return this.coverArt;
     }
 
     @Override

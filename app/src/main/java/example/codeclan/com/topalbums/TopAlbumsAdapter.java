@@ -46,6 +46,7 @@ public class TopAlbumsAdapter extends ArrayAdapter<Album> {
         TextView year = listItemView.findViewById(R.id.year);
         year.setText(currentAlbum.getYear().toString());
 
+        listItemView.setTag(currentAlbum);
 
         return listItemView;
 
